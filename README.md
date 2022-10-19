@@ -1,3 +1,6 @@
+# CursoPracticoDeNext-JS
+Esta es la continuación del [CursoPracticoDeReact](https://github.com/dan33pro/CursoPractico-React-JS) donde migramos nuestra app de React a su FrameWork más popular Next.js
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
