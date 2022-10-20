@@ -1,0 +1,58 @@
+@import 'vars';
+
+.MenuDesktop {
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    width: 100px;
+    height: auto;
+    border: 1px solid $--very-light-pink;
+    box-shadow: 2px 2px 4px rgba($color: black, $alpha: 0.5);
+    border-radius: 6px;
+    background: $--white;
+    padding: 20px 20px 0 20px;
+    will-change: transform;
+    transition: transform 500ms;
+}
+
+.MenuDesktop-animation {
+    transform: translateY(50px);
+}
+
+.MenuDesktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.MenuDesktop ul li {
+    text-align: end;
+}
+
+.MenuDesktop ul li:nth-child(1),
+.MenuDesktop ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+.MenuDesktop ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid $--very-light-pink;
+}
+
+.MenuDesktop ul li a {
+    color: $--black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.MenuDesktop ul li:last-child a {
+    color: $--hospital-green;
+    font-size: $--sm;
+}
+
+@media (max-width: 761px) {
+    .MenuDesktop {
+        display: none;
+    }
+}
