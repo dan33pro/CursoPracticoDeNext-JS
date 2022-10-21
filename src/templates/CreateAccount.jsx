@@ -4,18 +4,18 @@ import styles from '@styles/CreateAccount.module.scss';
 const CreateAccount = () => {
   return (
     <div className ={styles.CreateAccount}>
-        <div className ="CreateAccount-container">
-            <h1 className ="title">My account</h1>
-            <form action="/" className ="form">
+        <div className ={styles['CreateAccount-container']}>
+            <h1 className ={styles.title}>My account</h1>
+            <form action="/" className ={styles.form}>
                 <div>
-                    <label for="name" className ="label">Name</label>
-                    <input type="text" id="name" placeholder="Nombre Apellido" className ="input input-name" />
-                    <label for="email" className ="label">Email address</label>
-                    <input type="text" id="email" placeholder="name@example.com" className ="input input-email" />
-                    <label for="plassword" className ="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" className ="input input-password" />
+                    <label for="name" className ={styles.label}>Name</label>
+                    <input type="text" id="name" placeholder="Nombre Apellido" className ={`${styles['input']} ${styles['input-name']}`} />
+                    <label for="email" className ={styles.label}>Email address</label>
+                    <input type="text" id="email" placeholder="name@example.com" className ={`${styles['input']} ${styles['input-email']}`} />
+                    <label for="plassword" className ={styles.label}>Password</label>
+                    <input type="password" id="password" placeholder="*********" className ={`${styles['input']} ${styles['input-password']}`} />
                 </div>
-                <input type="submit" value="Create" className ="primary-button account-button" />
+                <input type="submit" value="Create" className ={`${styles['primary-button']} ${styles['account-button']}`} />
             </form>
         </div>
     </div>

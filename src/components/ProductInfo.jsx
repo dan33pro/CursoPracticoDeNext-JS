@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
+
 import AppContext from '@context/AppContext';
 import btAddCart from '@icons/bt_add_to_cart.svg';
+
 import styles from '@styles/ProductInfo.module.scss';
 
 const ProductInfo = () => {
@@ -14,8 +17,8 @@ const ProductInfo = () => {
         <p>
           {payload.description}
         </p>
-        <button className ="primary-button add-to-cart-button" onClick={() => addToCart(payload)}>
-            <img src={btAddCart} alt="add to cart" />
+        <button className ={`${styles['primary-button']} ${styles['add-to-cart-button']}`} onClick={() => addToCart(payload)}>
+            <Image src={btAddCart} alt="add to cart" />
             Add to cart
         </button>
     </div>

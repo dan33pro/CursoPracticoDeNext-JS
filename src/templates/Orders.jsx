@@ -5,9 +5,9 @@ import styles from '@styles/Orders.module.scss';
 const Orders = () => {
   return (
     <div className ={styles.Orders}>
-        <div className ="Orders-container">
-            <h1 className ="title">My orders</h1>
-            <div className ="Orders-content">
+        <div className ={styles['Orders-container']}>
+            <h1 className ={styles.title}>My orders</h1>
+            <div className ={styles['Orders-content']}>
                 <Order />
                 <Order />
                 <Order />

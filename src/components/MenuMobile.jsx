@@ -38,10 +38,10 @@ const MenuMobile = () => {
             </ul>
             <ul>
                 <li>
-                    <a href="/" className="email">name@example.com</a>
+                    <a href="/" className={styles.email}>name@example.com</a>
                 </li>
                 <li>
-                    <a href="/" className="sign-out">Sign out</a>
+                    <a href="/" className={styles['sign-out']}>Sign out</a>
                 </li>
             </ul>
         </div>

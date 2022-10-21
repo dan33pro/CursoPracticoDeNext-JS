@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import styles from '@styles/Header.module.scss';
+import Image from 'next/image';
 
 import MenuDesktop from '@components/MenuDesktop';
 import MenuMobilie from '@components/MenuMobile';
@@ -9,6 +9,8 @@ import AppContext from '@context/AppContext';
 import logoYS from '@logos/logo_yard_sale.svg';
 import iconMenu from '@icons/icon_menu.svg';
 import iconShoppingCart from '@icons/icon_shopping_cart.svg';
+
+import styles from '@styles/Header.module.scss';
 
 const Header = () => {
     const { state } = useContext(AppContext);
@@ -36,9 +38,9 @@ const Header = () => {
 
     return (
         <nav className={styles.Nav}>
-            <img src={iconMenu} alt="menu" className="menu" onClick={handleToggleM} />
-            <div className="navbar-left">
-                <img src={logoYS} alt="logo" className="nav-logo" />
+            <Image src={iconMenu} alt="menu" className={styles.menu} onClick={handleToggleM} />
+            <div className={styles['navbar-left']}>
+                <Image src={logoYS} alt="logo" className={styles['nav-logo']} />
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -60,11 +62,11 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div className="navbar-right">
+            <div className={styles['navbar-right']}>
                 <ul>
-                    <li className="navbar-email" onClick={handleToggleD}>name@example.com</li>
-                    <li className="navbar-shopping-cart" onClick={handleToggleOrder}>
-                        <img src={iconShoppingCart} alt="shopping_cart" />
+                    <li className={styles['navbar-email']} onClick={handleToggleD}>name@example.com</li>
+                    <li className={styles['navbar-shopping-cart']} onClick={handleToggleOrder}>
+                        <Image src={iconShoppingCart} alt="shopping_cart" />
                         { state.cart.length > 0 ? <div>{state.cart.length}</div> : null }
                     </li>
                 </ul>

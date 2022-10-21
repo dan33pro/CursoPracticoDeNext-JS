@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
+
 import AppContext from '@context/AppContext';
 import ProductInfo from '@components/ProductInfo';
 import iconClose from '@icons/icon_close.png';
+
 import styles from '@styles/ProductDetail.module.scss';
 
 const ProductDetail = () => {
@@ -14,11 +17,10 @@ const ProductDetail = () => {
 
   return (
     <aside className ={styles.ProductDetail}>
-        <div className ="ProductDetail-close" onClick={ () => handleToggleProductDetail()}>
-            <img src={iconClose} alt="close" />
+        <div className ={styles['ProductDetail-close']} onClick={ () => handleToggleProductDetail()}>
+            <Image src={iconClose} alt="close" />
         </div>
-        {console.log(payload[1])}
-        <img src={payload[0] && payload[1].images[0]} alt={payload[1].title} />
+        <Image src={payload[0] && payload[1].images[0]} alt={payload[1].title} />
         <ProductInfo />
     </aside>
   );
