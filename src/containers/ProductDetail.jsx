@@ -20,7 +20,12 @@ const ProductDetail = () => {
         <div className ={styles['ProductDetail-close']} onClick={ () => handleToggleProductDetail()}>
             <Image src={iconClose} alt="close" />
         </div>
-        <Image src={payload[0] && payload[1].images[0]} alt={payload[1].title} />
+        <Image 
+          layout="responsive"
+          width="100%"
+          height="100%"
+          src={payload[0] && payload[1].images[0]} 
+          alt={payload[1].title} />
         <ProductInfo />
     </aside>
   );

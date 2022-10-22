@@ -3,15 +3,48 @@
 .ProductDetail {
     position: fixed;
     right: 0;
-    top: 70px;
-    width: 360px;
-    height: calc(100vh - 100px);
+    top: calc(20vh - 30px);
+    min-width: 360px;
+    width: 25vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: calc(80vh  - 60px);
     padding-bottom: 24px;
     border-radius: 24px 0 0 24px;
     background: $--white;
     box-shadow: -2px 2px 4px rgba(black, 0.5);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     z-index: 1;
+}
+.ProductDetail::-webkit-scrollbar {
+    --webkit-appearance: none;
+}
+
+/* Estilos barra scroll vertical y horizontal*/
+.ProductDetail::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.ProductDetail::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+/* Botones y carril */
+.ProductDetail::-webkit-scrollbar-button:increment,
+.ProductDetail::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Almohadilla de la barra de scroll*/
+.ProductDetail::-webkit-scrollbar-thumb {
+    background: $--hospital-green;
+    border: 2px solid $--white;
+    border-radius: 20px;
+}
+
+.ProductDetail::-webkit-scrollbar-track {
+    border-radius: 10px;
 }       
 .ProductDetail-close {
     background-color: $--white;

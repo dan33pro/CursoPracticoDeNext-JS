@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import MenuDesktop from '@components/MenuDesktop';
 import MenuMobilie from '@components/MenuMobile';
@@ -40,7 +41,9 @@ const Header = () => {
         <nav className={styles.Nav}>
             <Image src={iconMenu} alt="menu" className={styles.menu} onClick={handleToggleM} />
             <div className={styles['navbar-left']}>
-                <Image src={logoYS} alt="logo" className={styles['nav-logo']} />
+                <Link href="/">
+                    <Image src={logoYS} alt="logo" className={styles['nav-logo']} />
+                </Link>
                 <ul>
                     <li>
                         <a href="/">All</a>

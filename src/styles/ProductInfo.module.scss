@@ -1,8 +1,10 @@
 @import 'vars';
 
 .ProductInfo {
-    width: 312px;
-    margin: 24px 24px 0 24px;
+    min-width: 312px;
+    width: 20vw;
+    margin: 24px auto 24px;
+    place-self: center;
 }
 .ProductInfo p:first-child {
     font-weight: bold;
@@ -32,6 +34,7 @@
     height: 50px;
     font-size: $--md;
     font-weight: bold;
+    margin: 0 auto;
 }
 .add-to-cart-button {
     display: flex;

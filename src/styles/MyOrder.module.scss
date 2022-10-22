@@ -1,7 +1,7 @@
 @import 'vars';
 
 .MyOrder {
-    width: 360px;
+    width: 460px;
     height: calc(100vh - 60px);
     padding: 0 24px 24px 24px;
     position: absolute;
@@ -78,6 +78,7 @@
 }
 
 .title {
+    margin-left: 10px;
     font-size: $--lg;
     font-weight: bold;
 }

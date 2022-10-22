@@ -9,18 +9,18 @@ import styles from '@styles/ProductItem.module.scss';
 const ProductItem = ({ product }) => {
   const { addToCart, addToActualProduct } = useContext(AppContext);
 
-  const handleToggleProductInfo = (item) => {
-    addToActualProduct(item);
+  const handleToggleProductInfo = (item1) => {
+    addToActualProduct(item1);
   }
 
-  const handleClick = (item) => {
-    addToCart(item);
+  const handleClick = (item2) => {
+    console.log(item2);
+    addToCart(item2);
   };
 
   return (
     <div className={styles.ProductItem}>
       <Image
-        loader={() => product.images[0]}
         src={product.images[0]}
         alt={product.title}
         width="100%"

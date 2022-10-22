@@ -2,9 +2,9 @@
 
 .MenuDesktop {
     position: fixed;
-    right: 40px;
+    right: 50px;
     top: 60px;
-    width: 100px;
+    width: max-content;
     height: auto;
     border: 1px solid $--very-light-pink;
     box-shadow: 2px 2px 4px rgba($color: black, $alpha: 0.5);
