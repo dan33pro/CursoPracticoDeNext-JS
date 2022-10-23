@@ -2,6 +2,7 @@
   "name": "platzistore",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/CursoPractico-React-JS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
