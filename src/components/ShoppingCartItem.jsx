@@ -13,6 +13,6 @@ const ShoppingCartItem = () => {
         <p>$120,00</p>
     </div>
   );
-}
+};
 
 export default ShoppingCartItem;

@@ -14,6 +14,6 @@ const Home = () => {
       { state.actualProduct[0] && <ProductDetail /> }
     </>
   );
-}
+};
 
 export default Home;

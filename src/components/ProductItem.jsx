@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 
 import AppContext from '@context/AppContext';
@@ -11,7 +11,7 @@ const ProductItem = ({ product }) => {
 
   const handleToggleProductInfo = (item1) => {
     addToActualProduct(item1);
-  }
+  };
 
   const handleClick = (item2) => {
     console.log(item2);
@@ -33,12 +33,12 @@ const ProductItem = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <figure onClick={() => handleClick(product)}>
+        <figure role="presentation" onClick={handleClick(product)} onKeyDown={handleClick}>
           <Image src={btAddCart} alt="" />
         </figure>
       </div>
     </div>
   );
-}
+};
 
 export default ProductItem;

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import logoYS from '@logos/logo_yard_sale.svg';
 import styles from '@styles/login.module.scss';
@@ -15,7 +16,7 @@ const Login = () => {
       password: formData.get('password'),
     };
     console.log(data);
-  }
+  };
 
   return (
     <div className={styles.login}>
@@ -30,13 +31,13 @@ const Login = () => {
             <button onClick={handleSubmit} className={`${styles['primary-button']} ${styles['login-button']}`}>
               Log in
             </ button>
-            <a href="/">Forgot my password</a>
+            <Link href="#">Forgot my password</Link>
           </form>
         </div>
         <button className={`${styles['secondary-button']} ${styles['signup-button']}`}>Sign up</button>
       </div>
     </div>
   );
-}
+};
 
 export default Login;

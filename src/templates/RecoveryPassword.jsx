@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import logoYS from '@logos/logo_yard_sale.svg';
 import iconEmail from '@icons/email.svg';
@@ -18,12 +19,12 @@ const RecoveryPassword = () => {
             </div>
             <button className ={`${styles['primary-button']} ${styles['RecoveryPassword-button']}`}>Login</button>
             <p className ={styles.resend}>
-                <span>Didn't receive the email?</span>
-                <a href="/">Resend</a>
+                <span>Didn&apos;t receive the email?</span>
+                <Link href="#">Resend</Link>
             </p>
         </div>
     </div>
   );
-}
+};
 
 export default RecoveryPassword;

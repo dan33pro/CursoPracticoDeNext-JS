@@ -23,6 +23,6 @@ const ProductInfo = () => {
         </button>
     </div>
   );
-}
+};
 
 export default ProductInfo;

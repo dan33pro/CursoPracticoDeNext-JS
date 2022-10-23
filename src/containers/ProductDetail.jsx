@@ -13,11 +13,11 @@ const ProductDetail = () => {
 
   const handleToggleProductDetail = () => {
     removeFromActualProduct();
-  }
+  };
 
   return (
     <aside className ={styles.ProductDetail}>
-        <div className ={styles['ProductDetail-close']} onClick={ () => handleToggleProductDetail()}>
+        <div className ={styles['ProductDetail-close']} role="presentation" onClick={handleToggleProductDetail} onKeyDown={handleToggleProductDetail}>
             <Image src={iconClose} alt="close" />
         </div>
         <Image 
@@ -29,6 +29,6 @@ const ProductDetail = () => {
         <ProductInfo />
     </aside>
   );
-}
+};
 
 export default ProductDetail;

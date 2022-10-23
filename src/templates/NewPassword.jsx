@@ -12,15 +12,15 @@ const NewPassword = () => {
             <h1 className ={styles.title}>Create a new password</h1>
             <p className ={styles.subtitle}>Enter a new password for your account</p>
             <form action="/" className ={styles.form}>
-                <label for="password" className ={styles.label}>Password</label>
+                <label htmlFor="password" className ={styles.label}>Password</label>
                 <input type="password" id="password" placeholder="*********" className ={`${styles.input} ${styles['input-password']}`} />
-                <label for="new-password" className ={styles.label}>Re-eneter password</label>
+                <label htmlFor="new-password" className ={styles.label}>Re-eneter password</label>
                 <input type="password" id="new-password" placeholder="*********" className ={`${styles.input} ${styles['input-password']}`} />
                 <input type="submit" value="Confirm" className ={`${styles['primary-button']} ${styles['NewPassword-button']}`} />
             </form>
         </div>
     </div>
   );
-}
+};
 
 export default NewPassword;

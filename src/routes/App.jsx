@@ -41,6 +41,6 @@ const App = () => {
       </BrowserRouter>
     </AppContext.Provider>
   );
-}
+};
 
 export default App;
