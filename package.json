@@ -2,10 +2,11 @@
   "name": "platzistore",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/CursoPractico-React-JS",
+  "homepage": "https://dan33pro.github.io/CursoPractico-React-JS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
