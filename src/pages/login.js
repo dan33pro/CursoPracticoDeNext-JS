@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import logoYS from '@logos/logo_yard_sale.svg';
 import styles from '@styles/login.module.scss';
@@ -15,7 +16,7 @@ const Login = () => {
       password: formData.get('password'),
     };
     console.log(data);
-  }
+  };
 
   return (
     <div className={styles.login}>
@@ -23,20 +24,24 @@ const Login = () => {
         <div>
           <Image src={logoYS} alt="logo" className={styles.logo} />
           <form action="/" className={styles.form} ref={form}>
-            <label htmlFor="email" className={styles.label}>Email address</label>
+            <label htmlFor="email" className={styles.label}>
+              Email address
+            </label>
             <input type="text" name="email" placeholder="name@example.com" className={`${styles.input} ${styles['input-email']}`} />
-            <label htmlFor="plassword" className={styles.label}>Password</label>
+            <label htmlFor="plassword" className={styles.label}>
+              Password
+            </label>
             <input type="password" name="password" placeholder="*********" className={`${styles.input} ${styles['input-password']}`} />
             <button onClick={handleSubmit} className={`${styles['primary-button']} ${styles['login-button']}`}>
               Log in
-            </ button>
-            <a href="/">Forgot my password</a>
+            </button>
+            <Link href="/recoveryPassword">Forgot my password</Link>
           </form>
         </div>
         <button className={`${styles['secondary-button']} ${styles['signup-button']}`}>Sign up</button>
       </div>
     </div>
   );
-}
+};
 
 export default Login;
