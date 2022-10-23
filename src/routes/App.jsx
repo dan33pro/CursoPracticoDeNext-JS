@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter basename='/CursoPractico-React-JS'>
+      <BrowserRouter basename='/'>
       {/* <BrowserRouter> */}
         <Layout>
           <Routes>
