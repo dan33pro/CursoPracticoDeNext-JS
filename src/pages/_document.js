@@ -6,6 +6,13 @@ class MyDocument extends Document{
             <Html lang="en">
                 <Head>
                     <title>React:Shop</title>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C689L541VP"></script>
+                    <script dangerouslySetInnerHTML={{
+                        __html: `window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-C689L541VP');`
+                    }} />
                 </Head>
                 <body>
                     <Main />
