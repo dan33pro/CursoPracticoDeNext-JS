@@ -39,12 +39,14 @@ const Header = () => {
 
     return (
         <nav className={styles.Nav}>
-            <div className={styles.menu}>
-                <Image src={iconMenu} alt="menu" onClick={handleToggleM} onKeyDown={handleToggleM} />
+            <div className={styles.menu} onClick={handleToggleM} onKeyDown={handleToggleM}>
+                <Image src={iconMenu} alt="menu" />
             </div>
             <div className={styles['navbar-left']}>
                 <Link href="/">
-                    <Image src={logoYS} alt="logo" className={styles['nav-logo']} />
+                    <div className={styles.containerLogo}>
+                        <Image src={logoYS} alt="logo" className={styles['nav-logo']} />
+                    </div>
                 </Link>
                 <ul>
                     <li>

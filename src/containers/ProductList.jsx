@@ -12,7 +12,9 @@ const ProductList = () => {
     <section className={styles.ProductList}>
       <div className={styles['ProductList-container']}>
         {products.map(product => {
-            return <ProductItem product = {product} key = {`productItem-${product.id}`}/>;
+            if ( product.images.length > 0 && product.images[0] !== '' && product.images[0].startsWith('https://')) {
+              return <ProductItem product = {product} key = {`productItem-${product.id}`}/>;
+            }
         })}
       </div>
     </section>

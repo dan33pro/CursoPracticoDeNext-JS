@@ -18,7 +18,15 @@
 }
 .menu{
     display: none;
+    height: 60px;
     width: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-logo {
     width: 100px;
@@ -72,7 +80,7 @@
 }
 @media (max-width: 760px) {
     .menu {
-        display: block;
+        display: flex;
     }
     .navbar-left ul{
         display: none;

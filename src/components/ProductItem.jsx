@@ -14,7 +14,6 @@ const ProductItem = ({ product }) => {
   };
 
   const handleClick = (item2) => {
-    console.log(item2);
     addToCart(item2);
   };
 
@@ -33,7 +32,7 @@ const ProductItem = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <figure role="presentation" onClick={handleClick(product)} onKeyDown={handleClick}>
+        <figure role="presentation" onClick={() => handleClick(product)} onKeyDown={handleClick}>
           <Image src={btAddCart} alt="" />
         </figure>
       </div>
