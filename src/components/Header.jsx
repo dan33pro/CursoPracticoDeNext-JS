@@ -39,8 +39,8 @@ const Header = () => {
 
     return (
         <nav className={styles.Nav}>
-            <div className={styles.menu} onClick={handleToggleM} onKeyDown={handleToggleM}>
-                <Image src={iconMenu} alt="menu" />
+            <div className={styles.menu}>
+                <Image src={iconMenu} alt="menu" onClick={handleToggleM} onKeyDown={handleToggleM} />
             </div>
             <div className={styles['navbar-left']}>
                 <Link href="/">
