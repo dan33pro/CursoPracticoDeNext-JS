@@ -11,21 +11,21 @@ const MyAccount = () => {
             <label htmlFor="name" className={styles.label}>
               Name
             </label>
-            <input id="name" className={styles.value}>
+            <p id="name" className={styles.value}>
               Nombre Apellido
-            </input>
+            </p>
             <label htmlFor="email" className={styles.label}>
               Email address
             </label>
-            <input id="email" className={styles.value}>
+            <p id="email" className={styles.value}>
               name@example.com
-            </input>
+            </p>
             <label htmlFor="password" className={styles.label}>
               Password
             </label>
-            <input id="password" className={styles.value}>
+            <p id="password" className={styles.value}>
               *********
-            </input>
+            </p>
           </div>
           <input type="submit" value="Edit" className={`${styles['secondary-button']} ${styles['account-button']}`} />
         </form>
