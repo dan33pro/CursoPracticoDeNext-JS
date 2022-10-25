@@ -7,7 +7,9 @@
     "name": "ReactShop",
     "short_name": "RShop",
     "description": "React Shop E-Comerce",
-    "icons": {
-        "name": "bt_add_to_cart.svg"
-    }
+    "icons": [
+        {
+            "name": "bt_add_to_cart.svg"
+        }
+    ]
 }
