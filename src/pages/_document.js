@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import Link from 'next/link';
 
 class MyDocument extends Document {
   render() {
@@ -7,7 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet='utf-8' />
-          <Link rel='manifest' href='/manifest.json' />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
