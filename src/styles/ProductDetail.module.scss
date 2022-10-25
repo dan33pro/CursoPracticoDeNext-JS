@@ -48,14 +48,20 @@
 }       
 .ProductDetail-close {
     background-color: $--white;
+    display: grid;
+    place-content: center;
     position: absolute;
     top: 14px;
     left: 14px;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     z-index: 2;
-    padding: 12px;
     border-radius: 50%;
+}
+.ProductDetail-close span img {
+    width: 10px !important;
+    height: 10px !important;
+    filter: invert(100%);
 }
 .ProductDetail > img:nth-child(2){
     width: 100%;
@@ -69,5 +75,8 @@
 @media (max-width: 640px) {
     .ProductDetail {
         width: 100%;
+        height: calc(100vh - 60px);
+        top: 60px;
+        border-radius: 0;
     }
 }
