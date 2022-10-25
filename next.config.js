@@ -5,6 +5,12 @@ const nextConfig = {
   images: {
     domains: ['placeimg.com', 'www.google.com', 'api.lorem.space', 'www.pngkey.com', 'images.unsplash.com'],
   },
-}
+};
 
-module.exports = nextConfig
+const withPWA = require('next-pwa') ({
+  dest: 'public',
+  include: ['production'],
+  register: true,
+});
+
+module.exports = withPWA(nextConfig);

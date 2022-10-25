@@ -1,0 +1,13 @@
+{
+    "theme_color": "#ACD9B2",
+    "background_color": "#F7F7F7",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "ReactShop",
+    "short_name": "RShop",
+    "description": "React Shop E-Comerce",
+    "icons": {
+        "name": "bt_add_to_cart.svg"
+    }
+}
