@@ -10,7 +10,7 @@
     "icons": [
         {
             "src": "/bt_add_to_cart.svg",
-            "sizes": "40x40",
+            "sizes": "144x144",
             "type": "image/svg"    
         }
     ]
