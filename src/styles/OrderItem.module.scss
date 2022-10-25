@@ -25,6 +25,23 @@
     font-weight: bold;
 }
 
+.OrderItem-close {
+    display: grid;
+    place-content: center;
+    width: 20px;
+    height: 20px;
+    background: $--hospital-green;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.OrderItem .OrderItem-close span img {
+    width: 10px !important;
+    height: 10px !important;
+    filter: invert(100%);
+}
+
 .OrderItem-close:hover {
     cursor: pointer;
 }
+
