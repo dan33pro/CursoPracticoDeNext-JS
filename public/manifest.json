@@ -9,7 +9,9 @@
     "description": "React Shop E-Comerce",
     "icons": [
         {
-            "name": "bt_add_to_cart.svg"
+            "src": "/bt_add_to_cart.svg",
+            "sizes": "40x40",
+            "type": "image/svg"    
         }
     ]
 }
