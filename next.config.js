@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['placeimg.com', 'www.google.com', 'api.lorem.space', 'www.pngkey.com', 'images.unsplash.com'],
+    unoptimized: true,
   },
 };
 
