@@ -14,7 +14,7 @@ import iconShoppingCart from '@icons/icon_shopping_cart.svg';
 import styles from '@styles/Header.module.scss';
 
 const Header = () => {
-    const { state } = useContext(AppContext);
+    const { state, toggleMyOrder } = useContext(AppContext);
 
     const [toggleD, setToggleD] = useState(false);
     const handleToggleD = () => {
@@ -30,9 +30,8 @@ const Header = () => {
         setToggleO(false);
     };
 
-    const [toggleO, setToggleO] = useState(false);
     const handleToggleOrder = () => {
-        setToggleO(!toggleO);
+        toggleMyOrder(!state.stateViewMyOrder);
         setToggleM(false);
         setToggleD(false);
     };
@@ -80,7 +79,7 @@ const Header = () => {
             </div>
             {toggleD && <MenuDesktop />}
             {toggleM && <MenuMobilie />}
-            {toggleO && <MyOrder />}
+            {state.stateViewMyOrder && <MyOrder />}
         </nav>
     );
 };

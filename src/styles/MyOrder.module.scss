@@ -78,15 +78,24 @@
 
 .title-container {
     display: flex;
+    align-items: center;
 }
 
-.title-container img {
+.MyOrder .title-container span {
+    width: 20px !important;
+    height: 20px !important;
+    background: $--hospital-green !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.title-container span img {
     transform: rotate(180deg);
-    margin-right: 14px;
+    filter: invert(100%);
 }
 
 .title {
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: $--lg;
     font-weight: bold;
 }
