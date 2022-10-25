@@ -41,7 +41,7 @@ const useInitialState = () => {
     setState({
       ...state,
       stateViewMyOrder: newState,
-    })
+    });
   };
 
   return {

@@ -20,14 +20,14 @@ const Header = () => {
     const handleToggleD = () => {
         setToggleD(!toggleD);
         setToggleM(false);
-        setToggleO(false);
+        toggleMyOrder(false);
     };
 
     const [toggleM, setToggleM] = useState(false);
     const handleToggleM = () => {
         setToggleM(!toggleM);
         setToggleD(false);
-        setToggleO(false);
+        toggleMyOrder(false);
     };
 
     const handleToggleOrder = () => {
